@@ -1,0 +1,8 @@
+Cedric Chauve (cedric.chauve@sfu.ca), April 27 2014.
+
+Format of CARs
+
+Each CAR is composed of a list of oriented genes, separated by
+gaps. Each gene present in a map is identified by an integer, and
+given with the extant loci that supports its location as an ancestral
+gene. The same holds for gaps.

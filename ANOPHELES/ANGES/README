@@ -1,0 +1,17 @@
+Cedric Chauve (cedric.chauve@sfu.ca), April 25 2014.
+
+Format of CARs
+
+Each CAR is composed of a list of oriented genes, organized linearly
+into groups of genes that are contiguous, although the order between
+the different groups can be flexible. A group of contiguous genes is
+framed by two possible pairs of symbols: _Q ... Q_ or _P ... P_ (the
+latter occurs very rarely, only 15 times in all ancestors).
+
+The order of blocks between _Q and Q_ is fixed, but a block can be
+completely reversed (Q-node of a PQ-tree structure, see DOI:
+10.1371/journal.pcbi.1000234). The order of blocks between _P and P_
+is free.
+
+Consecutive genes, not separated by _P, P_, _Q, Q_ form an adjacency.
+

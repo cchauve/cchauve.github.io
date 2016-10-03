@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta content="Computational paleogenomics Lab at SFU" name="description">
+<meta name="keywords" content="Cedric Chauve, SFU">
+<meta name="author" content="Cedric Chauve">
+
+<head>
+<title>Fast Phylogenetic Scaffolding of Ancient Contigs (FPSAC) and application to the medieval Black Death agent</title>
+<link rel="stylesheet" href="../paleo_fichiers/mystyle.css" type="text/css" media="screen">
+</head>
+
+<body>
+<div class="hd">
+
+<div style="clear: both; float: left;">
+<h1>
+<img src="../paleo_fichiers/irmacs.jpg" alt="" width="70px">
+Computational Methods for Paleogenomics and Comparative Genomics
+<img src="../paleo_fichiers/SFU.jpg" alt="" width="104px">
+</h1>
+<h2>The IRMACS Center at Simon Fraser University</h2>
+</div>
+
+<div style="float: right;">
+</div>
+
+</div>
+
+<div style="clear: both; float: left;" id="navbar">
+<a href="http://paleogenomics.irmacs.sfu.ca/index.html">HOME</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/research.html">RESEARCH</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/people.html">PEOPLE</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/publications.html">PUBLICATIONS</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/software.html">SOFTWARES AND DATA</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/support.html">SUPPORT AND COLLABORATIONS</a>
+</div>
+
+<div class="hd">
+
+<font style="color:#AA00AA;font-size:20px">Fast Phylogenetic Scaffolding of Ancient Contigs
+(FPSAC) and application to the medieval Black Death agent</font>
+
+<p>
+The code and data provided on this page are described in the following papers:
+<ul>
+<li><a style="color: #800000" href="http://bioinformatics.oxfordjournals.org/content/29/23/2987.abstract.html">FPSAC: Fast Phylogenetic Scaffolding of Ancient Contigs</a>. <a href="http://bioinformatics.oxfordjournals.org/">Bioinformatics, 29:2987-2994, 2013</a>.
+<li><a style="color: #800000" href="http://arxiv.org/pdf/1307.7642v1">The Genome of the Medieval Black Death gent (extended abstract)</a>. Presented at <a href="https://colloque.inra.fr/jobim2013_eng/">JOBIM 2013</a>.
+<li> <a style="color: #800000" href="http://arxiv.org/pdf/1306.4353v2">Hypergraph covering problems motivated by genome assembly questions</a>. Presented at <a href="http://iwoca2013.colloques.univ-rouen.fr/">IWOCA 2013</a> and <a href="http://theory.stanford.edu/stoc2013/">STOC 2013</a>.
+</ul>
+
+
+<TABLE BORDER="1">
+ <TR>
+ <TH>Description </TH>
+ <TH>File(s)</TH>
+ <TH>Format</TH>
+ <TH>Comments</TH>
+ </TR>
+
+ <TR>
+ <TH>Code</TH>
+ <TH></TH>
+ <TH></TH>
+ <TH></TH>
+ </TR>
+
+ <TR>
+ <TH> Archive</TH>
+ <TD> <a href="fpsac_1.0.tar.gz">fpsac_1.0.tar.gz</a></TD>
+ <TD> Tarball (tar.gz)</TD>
+ <TD> Python and shell scripts</TD>
+ </TD>
+ </TR>
+ 
+<TR>
+ <TH>Input Data</TH>
+ <TH></TH>
+ <TH></TH>
+ <TH></TH>
+ </TR>
+
+ <TR>
+ <TH> Contigs</TH>
+ <TD> <a href="black_death_contigs_individual_8291.fa.gz">black_death_contigs_individual_8291.fa.gz</a></TD>
+ <TD> FASTA</TD>
+ <TD> The length of contigs is 20bp longer than the number given in the contig id.</TD>
+ </TD>
+ </TR>
+ 
+<TR>
+ <TH> Extant genomes</TH>
+ <TD> <a href="black_death_extant_genomes.fa.gz">black_death_extant_genomes.fa.gz</a></TD>
+ <TD> FASTA</TD>
+ <TD> Names have been modified to avoid characters '.', ':' and '-'. Only chromosome sequences (no plasmid) are considered.</TD>
+ </TD>
+ </TR>
+
+
+
+ <TR>
+ <TH> Species tree</TH>
+ <TD> <a href="black_death_species_tree.nhx">black_death_species_tree.nhx</a></TD>
+ <TD> <a href="http://phylosoft.org/NHX/">NHX</a> augmented: <BR>ancestral node of interest marked by <b>@</b></TD>
+ <TD> Outgroups are not resolved (non-binary root) </TD>
+ </TD>
+ </TR>
+
+ <TR>
+ <TH>Intermediate results </TH>
+ <TH></TH>
+ <TH></TH>
+ <TH></TH>
+ </TR>
+
+ <TR>
+ <TH> Megablast output</TH>
+ <TD> <a href="black_death_megablast_hits.txt">black_death_megablast_hits.txt</a></TD>
+ <TD> <a href="http://www.ncbi.nlm.nih.gov/books/NBK21097/#A620">BLAST hit table</a></TD>
+ <TD> Obtained using <a href="http://www.ncbi.nlm.nih.gov/blast/Blast.cgi?CMD=Web&LAYOUT=TwoWindows&AUTO_FORMAT=Semiauto&ALIGNMENTS=50&ALIGNMENT_VIEW=Tabular&CLIENT=web&DATABASE=nr&DESCRIPTIONS=100&ENTREZ_QUERY=%28none%29&EXPECT=10&FILTER=L&FORMAT_OBJECT=Alignment&FORMAT_TYPE=HTML&NCBI_GI=on&PAGE=MegaBlast&SERVICE=plain&SET_DEFAULTS.x=34&SET_DEFAULTS.y=8&SHOW_OVERVIEW=on&END_OF_HTTPGET=Yes&SHOW_LINKOUT=yes&GET_SEQUENCE=yes">NCBI Megablast</a>
+ with default parameters.
+ </TD>
+ </TR>
+
+ <TR>
+ <TH> Homologous markers families</TH>
+ <TD> <a href="black_death_homologous_markers_families.txt">black_death_homologous_markers_families.txt</a></TD>
+ <TD> <I>family_header =</I> family_id family_multiplicity
+ <BR> <I>extant_occurrence_1 =</I> extant_genome.Chr:start-end orientation(+/-) contig_id_and_length:start-end(,contig_id_and_length:start-end...)
+ <BR> ...
+ <BR> <I>extant_occurrence_k =</I> extant_genome.Chr:start-end orientation(+/-) contig_id_and_length:start-end(,contig_id_and_length:start-end...)
+ </TD>
+ <TD> 
+ Family 13 was excluded from further analysis.
+ </TD>
+ </TR> 
+
+ <TR>
+ <TH> Adjacencies and repeat_spanning_intervals</TH>
+ <TD> <a href="black_death_adjacencies.txt">black_death_adjacencies.txt</a>
+<a href="black_death_repeat_spanning_intervals.txt">black_death_repeat_spanning_intervals.txt</a></TD>
+ <TD> <a href="http://paleogenomics.irmacs.sfu.ca/ANGES/index.html">ANGES</a> format augmented to include gaps coordinates
+ <BR> each adjacency or common interval (character) is represented by a single row in the file:
+ <BR> character_id|phylogenetic_weight;list_of_species_containing_character:list_of_markers_in_character list_of-gaps_coordinates
+ </TD>
+ <TD> 
+ <P>
+ Markers were doubled to account for orientation: family X induced two families, with respective ids 2X (for the head of the markers) and 2X-1 (tails of the markers)
+ Adjacencies (2X,2X-1) are weighted by 10000 to ensure markers are properly reconstructed.
+ See <a href="http://www.ncbi.nlm.nih.gov/pubmed/21846735">there</a> for further details.
+ </TD>
+ </TR> 
+
+ <TR>
+ <TH> Selected subset of adjacencies of maximum weight and compatible with a circular structure</TH>
+ <TD> Kept adjacencies: <a href="black_death_kept_adjacencies.txt">black_death_kept_adjacencies.txt</a>
+ <BR> Discarded adjacencies: <a href="black_death_discarded_adjacencies.txt">black_death_discarded_adjacencies.txt</a></TD>
+ <TD> <a href="http://paleogenomics.irmacs.sfu.ca/ANGES/index.html">ANGES</a> format  augmented to include gaps coordinates as above.
+ </TD>
+ <TD> 
+ Algorithm: <a href="http://www.uff.br/recombcg/program.php#s11">Linearization of ancestral multichromosomal genomes</a>.
+ <P>Markers are still doubled, as above.
+ </TD>
+ </TR> 
+
+ <TR>
+ <TH> Selected subset of repeat spanning intervals of maximum weight and compatible with the selected adjacencies</TH>
+ <TD> Kept intervals: <a href="black_death_kept_repeat_spanning_intervals.txt">black_death_kept_repeat_spanning_intervals.txt</a>
+ <BR> Discarded intervals: <a href="black_death_discarded_repeat_spanning_intervals.txt">black_death_discarded_repeat_spanning_intervals.txt</a></TD>
+ <TD> <a href="http://paleogenomics.irmacs.sfu.ca/ANGES/index.html">ANGES</a> format  augmented to include gaps coordinates as above.
+ </TD>
+ <TD> 
+ <P>Markers are still doubled, as above.
+ </TD>
+ </TR> 
+
+ <TR>
+ <TH> Markers circular order (without outgroup adjacencies)</TH>
+ <TD><a href="black_death_markers_order.txt">black_death_markers_order.txt</a>
+ </TD>
+ <TD> </TD>
+ <TD> Undoubled markers.</TD>
+
+<TR>
+ <TH> Outgroup supported adjacencies</TH>
+ <TD><a href="black_death_outgroup_adjacencies.txt">black_death_outgroup_adjacencies.txt</a>
+ </TD>
+ <TD> </TD>
+ <TD> </TD>
+
+
+ <TR>
+ <TH>Ancestral gaps</TH>
+ <TD><a href="black_death_gaps.txt">black_death_gaps.txt</a>
+ </TD>
+ <TD> </TD>
+ <TD> Undoubled markers.
+ </TD>
+
+ <TR>
+ <TH>Extant gaps alignments</TH>
+ <TD><a href="black_death_gaps_alignments.tar.gz">black_death_gaps_alignments.tar.gz</a>
+ </TD>
+ <TD> Default Muscle output: FASTA (see <a href="http://www.drive5.com/muscle/muscle_userguide3.8.html#_Toc260497030">Muscle manual</a>) 
+ </TD>
+ <TD> Computed using <a href="http://www.drive5.com/muscle/downloads.htm">Muscle  3.8.31</a>
+ </TD>
+
+ <TR>
+ <TH>Final results</TH>
+ <TH></TH>
+ <TH></TH>
+ <TH></TH>
+ </TR>
+
+ <TR>
+ <TH>Ancestral genome: DNA sequence</TH>
+ <TD><a href="black_death_DNA_sequence.fa.gz">black_death_DNA_sequence.fa.gz</a>
+ </TD>
+ <TD> 
+ </TD>
+ <TD> Gaps for outgroup adjacencies are replaced by a sequence of 50 Ns.
+ </TD>
+
+ <TR>
+ <TH>Ancestral genome: sequence map with extant annotations</TH>
+ <TD><a href="black_death_ancestral_sequence_map">black_death_ancestral_sequence_map</a>
+ </TD>
+ <TD> 
+ </TD>
+ <TD>
+ </TD>
+
+<TR>
+ <TH>Annotation</TH>
+ <TD> <a href="black_death_ancestral_sequence_annotation_Basys.gbk">black_death_ancestral_sequence_annotation_Basys.gbk</a>
+ </TD>
+ <TD>
+ </TD>
+ <TD>
+Obtained with <a href="http://basys.ca/">Basys</a>.
+ </TD>
+
+
+</TABLE> 
+
+
+</div>
+</body>
+</html>

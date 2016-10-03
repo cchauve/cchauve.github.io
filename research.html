@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html hola_ext_inject="ready" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta content="Computational paleogenomics Lab at SFU" name="description">
+<meta name="keywords" content="Cedric Chauve, SFU">
+<meta name="author" content="Cedric Chauve">
+
+<title>Computational Methods for Paleogenomics and Comparative Genomics at Simon Fraser University</title>
+<link rel="stylesheet" href="paleo_fichiers/mystyle.css" type="text/css" media="screen">
+</head>
+
+<body hola-ext-player="1">
+<div class="hd">
+
+<div style="clear: both; float: left;">
+<h1>
+<img src="paleo_fichiers/irmacs.jpg" alt="" width="70px">
+Computational Methods for Paleogenomics and Comparative Genomics
+<img src="paleo_fichiers/SFU.jpg" alt="" width="104px">
+</h1>
+<h2>The IRMACS Center at Simon Fraser University</h2>
+</div>
+
+<div style="float: right;">
+</div>
+
+</div>
+
+<div style="clear: both; float: left;" id="navbar">
+<a href="http://paleogenomics.irmacs.sfu.ca/index.html">HOME</a> -
+RESEARCH -
+<a href="http://paleogenomics.irmacs.sfu.ca/people.html">PEOPLE</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/publications.html">PUBLICATIONS</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/software.html">SOFTWARE AND DATA</a> -
+<a href="http://paleogenomics.irmacs.sfu.ca/support.html">SUPPORT AND COLLABORATIONS</a>
+</div>
+
+<div class="hd">
+
+<hr>
+
+<h2>Reconstructing ancestral genomes</h2> Our main research theme is
+the reconstruction of ancestral genome (maps, gene orders, gene
+content, genome sequence), from the comparison of related extant
+genomes. We have developped two families of methods for this problem:
+a local approach, that considers a single ancestral genome within a
+given species phylogeny, and a global (aka small parsimony approach),
+that considers all ancestral genomes of a species phylogeny at once.
+
+<p>
+
+
+<p>
+</p><table>
+<tbody><tr>
+<td>
+<img src="paleo_fichiers/PLOS1.jpg" width="125px">
+<img src="paleo_fichiers/DCS.jpg" width="125px">
+<img src="paleo_fichiers/AMNIOTE.jpg" width="125px">
+<img src="paleo_fichiers/black_death.jpg" width="125px">
+</td>
+
+
+<td>
+The local approach principle was first developed for the case of
+one-to-one orthologous genomic markers (genes, synteny blocks,
+...). Its principle, that relies on the combinatorial concept of
+Consecutive Ones Property of Binary Matrices, was outlined in
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/19043541">PLoS
+Comput. Biol. 2008</a>] and implemented in the
+software <a href="http://paleogenomics.irmacs.sfu.ca/ANGES/index.html">ANGES</a>
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/22820205">Bioinformatics
+2012</a>]. Recently, this approach has been extended to handle
+duplicated markers
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/23281593">BMC
+Bioinformatics 2012</a>, <a href="http://summit.sfu.ca/item/14807">SFU
+PhD thesis, 2015</a>]. Our algorithms and softwares have been applied
+to several ancestral genomes, including mosquitoes
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/25554792">Science
+2014</a>], yeasts
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/20874398">JCB 2010</a>],
+plants
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/21685079">Bioinformatics
+2011</a>], amniotes
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/21846735">Bioinformatics
+2011</a>].
+
+<p> Our work on the small parsimony problem follows from the seminal
+work of Sankoff and El-Mabrouk that links reconciled gene trees and
+ancestral genomes (reviewed in
+[<a href="http://dx.doi.org/10.1007/978-1-4471-5298-9_4">MAGE
+2013</a>]). Our main contribution is a probabilistic dynamic
+programming algorithm for the reconstruction of the evolutionary
+histories of gene adjacencies, implemented in the software 
+<a href="https://github.com/yannponty/DeClone">DeClone</a>
+[<a href="http://dx.doi.org/10.1101/026310">biorxiv 2015</a>] that can
+also apply to scaffold fragmented extant genomes
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/26450761">BMC Genomics
+2015</a>].
+The most recent direction of research in our lab is the
+integration of both approaches into a unified global ancestral genome
+reconstruction pipeline.
+
+<p>
+The recent breakthroughs in ancient DNA (aDNA) sequencing
+naturally lead us to investigate the problem of applying the
+principles of the methods we developed to reconstruct ancestral
+genomes maps to the assembly of aDNA sequencing data. Our first
+results, on scaffolding the genome of the Black Death agent illustrate
+the relevance of this approach
+[<a href="http://bioinformatics.oxfordjournals.org/content/early/2013/09/24/bioinformatics.btt527">Bioinformatics
+2013</a>].
+
+<p>
+Finally, our line of work that aims at using duplicated genes
+for the reconstruction of ancestral genomes motivated a series of
+papers on the correction of gene trees
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/25161242">Bioinformatics
+2014</a>] and on the reconciliation between gene trees and species
+trees [<a href="http://www.ncbi.nlm.nih.gov/pubmed/21464510">TCBB
+2012</a>].
+
+</td>
+</tr>
+</tbody></table> 
+
+<hr>
+
+<h2>RNA secondary structures comparison.</h2>
+
+<table>
+<tbody><tr>
+<td>
+<img src="paleo_fichiers/RNA.jpg" width="150px">
+</td>
+<td>
+We are mostly interested in developing accurate and efficient
+algorithm to compare pairs of RNA secondary structures. Among others, we have
+been involved in the development of
+the <a href="http://brasero.labri.fr/">BRASERO benchmark</a>, and in
+the design of efficient dynamic programming algorithms for comparing
+RNA secondary structures
+[<a href="http://dx.doi.org/10.1016/j.tcs.2010.11.020">TCS 2011</a>].
+
+<p>
+Our most recent work, in collaboration with Bordeaux University, showed that the chaining approach, widely used in sequence comparison, can be extended very to RNA secondary structures to offer an efficient and accurate method to find structure-sequence homologs in a database of RNA sequences [<a href="http://dx.doi.org/10.1016/j.jda.2011.12.013">JDA 2012</a>; <a href="http://www.ncbi.nlm.nih.gov/pubmed/25768236">JCB 2015</a>].
+
+</td> </tr> </tbody></table>
+
+</div>
+
+
+</body></html>
+

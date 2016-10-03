@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Korak program</title></head><body><div style="text-align: center;"><div 
+style="text-align: left;">
+<br>
+</div>
+<div style="text-align: center;"><br>
+<big><big><big><big>
+</big></big></big></big></div>
+</div><big><big><big><big><br></big></big></big></big>
+<hr style="width: 100%; height: 2px;"><big><big><big><big>
+</big></big></big></big>
+<div style="text-align: left;">
+<div style="text-align: center;"><br>
+</div>
+<div style="text-align: center;"><big><big><big><big><span style="font-style: italic;">Korak</span>: An efficient method for exploring the space of gene tree/species tree reconciliations in a probabilistic framework</big></big></big></big><br>
+</div>
+
+
+<center>Jean-Philippe Doyon, Sylvie Hamel, and Cedric Chauve<br>
+<a href="http://www.computer.org/csdl/trans/tb/2012/01/ttb2012010026-abs.html">IEEE/ACM Transactions on Computational Biology and Bioinformatics</span>, 2012</a><br></center>
+
+<big><br>
+</big>Given a gene tree G, a species tree S (both in newick format) and duplication/loss rates and branch length for S,&nbsp; <span style="font-style: italic;">Korak</span> computes the following:<br>
+<ul>
+  <li>The size and diameter of the whole space of reconciliations between G and S.</li>
+  <li>The likelihood of the LCA based reconciliation.</li>
+  <li>The sum of likelihood overall reconciliations located in a
+subspace of the whole space of reconciliations (given a maximal depth). That is the probability mass of the considered subspace.</li>
+  <li>The (exact/approximate) posterior probability (given the tree G) of each visited reconciliation.<br>
+  </li>
+  <li>Compare the probability analysis with the real reconciliation <span style="font-weight: bold;">(for simulated gene tree only)</span>.</li>
+</ul>
+<br>
+<span style="font-weight: bold;">A user manual of the program</span>: <a href="TCBB2011/manualExploration.pdf">manualExploration.pdf</a>.<br>
+
+<br><span style="font-weight: bold;">The archive </span><a style="font-weight: bold;" href="TCBB2011/Exploration.tgz">Exploration.tgz</a><span style="font-weight: bold;"> contains the following:</span><br>
+<ul>
+  <li>The C++ code which consists of four libraries (folder LIBRARY) and the main project (folder EXPLORATION/exploration/).</li>
+  <li>Several input files (folder EXPLORATION/INPUT_FILES/)<br>
+  </li>
+</ul>
+<br><span style="font-weight: bold;">
+Follow these steps to build the binary called Korak</span><span style="font-weight: bold;"></span><br>
+<ol>
+  <li>Download the archive <a href="TCBB2011/Exploration.tgz">Exploration.tgz.</a></li>
+  <li>Create a new directory and move the archive in it.<br>
+</li>
+  <li>Extract the archive : 'tar -zxvf Exploration.tgz'</li>
+  <li>'cd EXPLORATION/exploration/'</li>
+  <li>Type 'cmake .' to build the makefile corresponding to your system.</li>
+  <li>Type 'make' to build the binary file called Exploration (several
+warnings are written to the shell, don't worry, it is normal: job to do
+latter)<br>
+  </li>
+  <li>Execute the binary: './Exploration D ../INPUT_FILES/DATA2 E L Q D'</li>
+
+</ol>The optionn of the program and the format of the output are described in <a href="TCBB2011/manualExploration.pdf">manualExploration.pdf</a>. The same example as Step 7 below is used.<br>
+<span style="font-weight: bold;"><br>
+Output files of the </span><span style="font-weight: bold;"></span><span style="font-style: italic; font-weight: bold;">Exploration</span><span style="font-weight: bold;"> program:</span>
+<ul>
+  <li>exploration.log2&nbsp;&nbsp;&nbsp; : summarize of the running time</li>
+  <li>exploration.results : results of the computation (see <a href="TCBB2011/manualExploration.pdf">manualExploration.pdf</a>)<br>
+  </li>
+</ul>
+
+<br>
+<hr style="width: 100%; height: 2px;">
+<div style="text-align: center;">
+<big><big><big><big>Probabilistic Analysis on Real and Simulated Gene Trees</big></big></big></big><br>
+</div>
+<br>
+<big>This section contains the following:</big><br>
+
+
+<ul>
+<li>Input data:&nbsp;</li><ul><li>Real data for 12 fungal genomes [1]:</li></ul><ul><ul><li>1278 real gene family trees.</li></ul><ul><li>Species tree with branch length (in millions of years) and duplications and loss rates (computed by Cafe [2])<br>
+      </li></ul></ul>
+</ul>
+
+<ul>
+<ul><li>Synthetic data based on the real ones above:</li><ul><li>Simulated gene trees using a "recursive" birth-and-death process (see the paper);</li><li>Based on the rates R computed by cafe, three duplication/loss rates categories are considered<br>
+      </li><ul><li>1051 trees with R x 1; <br>
+        </li><li>1025 trees with R x 1.4;</li><li>&nbsp; 924 trees with R x 1.8.</li></ul></ul></ul>
+</ul>
+
+<ul>
+<li>Output data:</li><ul><li>Real gene trees:</li><ul><li>Complete exploration</li>
+      <li>Incomplete exploration</li>
+</ul><li>Simulated gene trees</li><ul><li>Complete exploration<br>
+</li></ul></ul>
+</ul>
+<br>
+<span style="font-weight: bold;">
+</span><br>
+<div style="text-align: center;"><big><big><big><span style="font-weight: bold;">Input gene trees</span><br></big></big></big></div><table style="text-align: left; width: 1105px; height: 124px;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td><br>
+</td><td style="text-align: center; font-weight: bold;">Increasing Factor (I.F.)</td><td style="text-align: center; font-weight: bold;">Gene Trees</td><td style="text-align: center; font-weight: bold;">Branch Lengths (in time) and Rates</td><td style="vertical-align: top; text-align: center; font-weight: bold;">Species Tree (12 fungal genomes)</td>
+</tr><tr><td style="font-weight: bold;">Real gene trees</td><td style="text-align: center;">Not applicable</td><td style="text-align: center;">1278 trees<br>
+      <a href="TCBB2011/REAL_GENE_TREE/realGeneTree.tgz">realGeneTree.tgz</a><br>
+</td><td colspan="1" rowspan="2" style="text-align: center;"><a href="TCBB2011/edgeValues-1/index.html">edgeValues-1</a><br>
+</td><td colspan="1" rowspan="4" style="vertical-align: top;"><br>
+      <br>
+      <br>
+      <br>
+      <div style="text-align: center;"><a href="TCBB2011/speciesTree/index.html">speciesTree</a><br>
+      </div>
+      </td>
+</tr><tr><td style="font-weight: bold;" colspan="1" rowspan="3">Simulated gene trees</td><td style="text-align: center;">1</td><td style="text-align: center;">1051 trees<br>
+      <a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_1.tgz">simulatedGeneTree_1.tgz</a><br>
+</td></tr><tr><td style="text-align: center;">1.4</td><td style="text-align: center;">1025 trees<br>
+      <a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_1.4.tgz">simulatedGeneTree_1.4.tgz</a><br>
+</td><td style="text-align: center;"><a href="TCBB2011/edgeValues-1.4">edgeValues-1.4</a><br>
+</td></tr><tr><td style="text-align: center;">1.8</td><td style="text-align: center;">&nbsp; 924 trees<br>
+      <a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_1.8.tgz">simulatedGeneTree_1.8.tgz</a><br>
+</td><td style="text-align: center;"><a href="TCBB2011/edgeValues-1.8">edgeValues-1.8</a><br>
+</td></tr></tbody></table>
+<br><br><div style="text-align: center;"><big><big><big><span style="font-weight: bold;">Probabilistic analysis</span></big></big></big></div><table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td style="text-align: center; font-weight: bold;" colspan="1" rowspan="2">Reconciliation Tree Explored</td><td colspan="1" rowspan="2" style="text-align: center; font-weight: bold;">Real Gene Trees</td><td style="text-align: center; font-weight: bold;" colspan="3" rowspan="1">Simulated Gene Tree with I.F.</td></tr><tr><td style="text-align: center; font-weight: bold;">1</td><td style="text-align: center; font-weight: bold;">1.4</td><td style="text-align: center; font-weight: bold;">1.8</td></tr><tr><td style="text-align: center;">Whole tree</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_CompleteExploration.tgz">realGeneTree_CompleteExploration.tgz</a><br>
+</td><td style="text-align: center;"><a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_CompleteExploration_1.tgz">simulatedGeneTree_CompleteExploration_1.tgz</a><br>
+</td><td style="text-align: center;"><a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_CompleteExploration_1.4.tgz">simulatedGeneTree_CompleteExploration_1.4.tgz</a><br>
+</td><td style="text-align: center;"><a href="TCBB2011/SIMULATED_GENE_TREE/simulatedGeneTree_CompleteExploration_1.8.tgz">simulatedGeneTree_CompleteExploration_1.8.tgz</a><br>
+</td></tr><tr><td style="text-align: center; color: black;" colspan="1" rowspan="1"><span style="font-weight: bold;">Subtree with Depth</span></td><td style="color: black; background-color: rgb(153, 153, 153);" colspan="1" rowspan="1"><br>
+</td><td style="color: black; background-color: rgb(153, 153, 153);" colspan="1" rowspan="1"><br>
+</td><td style="color: black; background-color: rgb(153, 153, 153);" colspan="1" rowspan="1"><br>
+</td><td style="color: black; background-color: rgb(153, 153, 153);" colspan="1" rowspan="1"><br>
+</td></tr><tr></tr><tr><td style="text-align: center;">0</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_0.tgz">realGeneTree_Depth_0.tgz</a><br>
+</td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">1</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_1.tgz">realGeneTree_Depth_1.tgz</a><br>
+</td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">2</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_2.tgz">realGeneTree_Depth_2.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">3</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_3.tgz">realGeneTree_Depth_3.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">4</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_4.tgz">realGeneTree_Depth_4.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">5</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_5.tgz">realGeneTree_Depth_5.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">6</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_6.tgz">realGeneTree_Depth_6.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">7</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_7.tgz">realGeneTree_Depth_7.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr><td style="text-align: center;">8</td><td style="text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_8.tgz">realGeneTree_Depth_8.tgz</a></td><td><br>
+</td><td><br>
+</td><td><br>
+</td></tr><tr>
+      <td style="vertical-align: top; text-align: center;">9<br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_9.tgz">realGeneTree_Depth_9.tgz</a></td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: center;">10<br>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><a href="TCBB2011/REAL_GENE_TREE/realGeneTree_Depth_10.tgz">realGeneTree_Depth_10.tgz</a></td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+</tbody></table><br><br>
+References<br>
+[1] <a href="http://www.nature.com/nature/journal/v449/n7158/abs/nature06107.html">I.
+Wapinski, A. Pfeffer, N. Friedman, and A. Regev. Natural history and
+evolutionary principles of gene duplication in fungi. Nature,
+449:54&#8211;61, 2007.</a><br>
+[2] <a href="http://bioinformatics.oxfordjournals.org/content/22/10/1269.abstract">T.
+De Bie, N. Cristianini, J.P. Demuth, and M.W. Hahn. CAFE: a
+computational tool for the study of gene family evolution.
+Bioinformatics, 22(10):1269&#8211;1271, 2006.</a><br>
+
+</div>
+</div>
+</body></html>
+
+<!-- Localized -->

@@ -1,0 +1,65 @@
+EXTANT GENOMES
+Outgroups: DMEL5 AALB 
+Ingroups: ADIR AARA AGAM AQUA 
+KARYOTYPES
+	DMEL5	14
+	AALB	52
+	ADIR	261
+	AARA	301
+	AGAM	6
+	AQUA	585
+HOMOLOGOUS FAMILIES
+	all		17642
+	unfiltered for overlap	17642
+	unfiltered for copy number	10671
+ANCESTRAL COPY NUMBERS
+	copy number =	0	number of families	0
+	copy number =	1	number of families	10196
+	copy number =	2	number of families	391
+	copy number =	3	number of families	58
+	copy number =	4	number of families	23
+	copy number =	5	number of families	8
+	copy number =	6	number of families	1
+	copy number =	7	number of families	1
+	copy number =	8	number of families	1
+	copy number =	9	number of families	1
+	copy number =	10	number of families	1
+	copy number >=	11	number of families	1
+EXTANT GENOMES CONTENT
+	genome	all	unfiltered for overlap	unfileterd for copy number
+	DMEL5	13362	12821	7741
+	AALB	10527	10150	9652
+	ADIR	11508	11078	10567
+	AARA	11979	11612	10517
+	AGAM	12243	11942	10560
+	AQUA	11943	11576	10593
+ANCESTRAL ADJACENCIES
+	all		9959	weight>=0.5 9184	weight>=1 256
+	kept		9560	weight>=0.5 9125	weight>=1 256
+	discarded	399	weight>=0.5 59	weight>=1 0
+	families in conflict	633
+REPEAT CLUSTERS
+	all		427
+	size =	1	number of clusters	379
+	size =	2	number of clusters	37
+	size =	3	number of clusters	9
+	size =	4	number of clusters	2
+	size =	5	number of clusters	0
+	size =	6	number of clusters	0
+	size =	7	number of clusters	0
+	size =	8	number of clusters	0
+	size =	9	number of clusters	0
+	size =	10	number of clusters	0
+	size >=	11	number of clusters	1
+REPEAT SPANNING INTERVALS
+	all		510	weight>=0.5 438	weight>=1 0
+	kept		441	weight>=0.5 398	weight>=1 0
+	discarded	69	weight>=0.5 40	weight>=1 0
+SCAFFOLD/CONTIGUOUS ANCESTRAL REGIONS
+	number  	774
+	linear  	774
+	circular	0
+UNASSIGNED ADJACENCIES AND FAMILIES NOT IN CARS
+	unassigned adjacencies	368
+		including one non-repeat	333
+	unassigned families	854
