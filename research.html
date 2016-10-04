@@ -38,16 +38,7 @@ RESEARCH -
 
 <hr>
 
-<h2>Reconstructing ancestral genomes</h2> Our main research theme is
-the reconstruction of ancestral genome (maps, gene orders, gene
-content, genome sequence), from the comparison of related extant
-genomes. We have developped two families of methods for this problem:
-a local approach, that considers a single ancestral genome within a
-given species phylogeny, and a global (aka small parsimony approach),
-that considers all ancestral genomes of a species phylogeny at once.
-
-<p>
-
+<h2>Genome evolution</h2> Our main research theme is to develop computational methods to analyse extant genomes in a phylogenetic context, to understand the process that shape genomes during evolution. For this, we focus on several problems, such as reconstructing the gene order of ancestral genomes, computing genome rearrangement scenarios, computing evolutionary scenarios for gene families, ...
 
 <p>
 </p><table>
@@ -60,68 +51,55 @@ that considers all ancestral genomes of a species phylogeny at once.
 </td>
 
 
-<td>
-The local approach principle was first developed for the case of
-one-to-one orthologous genomic markers (genes, synteny blocks,
-...). Its principle, that relies on the combinatorial concept of
-Consecutive Ones Property of Binary Matrices, was outlined in
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/19043541">PLoS
-Comput. Biol. 2008</a>] and implemented in the
-software <a href="http://paleogenomics.irmacs.sfu.ca/ANGES/index.html">ANGES</a>
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/22820205">Bioinformatics
-2012</a>]. Recently, this approach has been extended to handle
-duplicated markers
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/23281593">BMC
-Bioinformatics 2012</a>, <a href="http://summit.sfu.ca/item/14807">SFU
-PhD thesis, 2015</a>]. Our algorithms and softwares have been applied
-to several ancestral genomes, including mosquitoes
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/25554792">Science
-2014</a>], yeasts
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/20874398">JCB 2010</a>],
-plants
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/21685079">Bioinformatics
-2011</a>], amniotes
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/21846735">Bioinformatics
-2011</a>].
+<p>
+One of our favorite research problems is the reconstruction of
+ancestral genome structures (genome maps based on synteny blocks, or
+gene orders). Our approach follows the comparative paradigm, that
+assumes that conserved features of related extant genomes indicate
+potential ancestral genome features.  We work within two
+methodological frameworks for this problem: a local approach, that
+considers a single ancestral genome within a given species phylogeny [<a href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000234;jsessionid=A8E1CCB01BBC1E4D167F20E51A44195A">PLoS Comput Biol 2008</a>,<a href="http://bioinformatics.oxfordjournals.org/content/28/18/2388.full.pdf+html">ANGES</a>],
+and a global (aka small parsimony approach), that considers all
+ancestral genomes of a species phylogeny at once [<a href="http://dx.doi.org/10.1007/978-3-319-38782-6_17">ISBRA 2016</a>.
 
-<p> Our work on the small parsimony problem follows from the seminal
-work of Sankoff and El-Mabrouk that links reconciled gene trees and
-ancestral genomes (reviewed in
-[<a href="http://dx.doi.org/10.1007/978-1-4471-5298-9_4">MAGE
-2013</a>]). Our main contribution is a probabilistic dynamic
-programming algorithm for the reconstruction of the evolutionary
-histories of gene adjacencies, implemented in the software 
-<a href="https://github.com/yannponty/DeClone">DeClone</a>
-[<a href="http://dx.doi.org/10.1101/026310">biorxiv 2015</a>] that can
-also apply to scaffold fragmented extant genomes
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/26450761">BMC Genomics
-2015</a>].
-The most recent direction of research in our lab is the
-integration of both approaches into a unified global ancestral genome
-reconstruction pipeline.
+<p>
+Lately, we aim to extend these approaches in order we can incorporate
+in the computation models genefamily events such as gene duplication,
+loss or transfert. In this approach, we developed a probablistic
+approach within the DeCo algorithmic framework
+[<a href="http://www.biomedcentral.com/1471-2105/16/S19/S6">DeClone</a>]. This
+line of work also motivates motivated a series of papers on the
+correction of gene trees
+[<a href="http://www.ncbi.nlm.nih.gov/pubmed/25161242">Bioinformatics
+2014</a>] and on the reconciliation between gene trees and species
+trees
+[<a href="http://bioinformatics.oxfordjournals.org/content/32/13/2056.abstract">ecceTERA</a>].
 
 <p>
 The recent breakthroughs in ancient DNA (aDNA) sequencing
 naturally lead us to investigate the problem of applying the
 principles of the methods we developed to reconstruct ancestral
 genomes maps to the assembly of aDNA sequencing data. Our first
-results, on scaffolding the genome of the Black Death agent illustrate
-the relevance of this approach
-[<a href="http://bioinformatics.oxfordjournals.org/content/early/2013/09/24/bioinformatics.btt527">Bioinformatics
-2013</a>].
+results, on scaffolding of ancient <i>Yersinia pestis</i> genomes
+illustrates the relevance of this approach.
+[<a href="http://bioinformatics.oxfordjournals.org/content/29/23/2987.abstract.html">FPSAC</a>].
 
 <p>
-Finally, our line of work that aims at using duplicated genes
-for the reconstruction of ancestral genomes motivated a series of
-papers on the correction of gene trees
-[<a href="http://www.ncbi.nlm.nih.gov/pubmed/25161242">Bioinformatics
-2014</a>] and on the reconciliation between gene trees and species
-trees [<a href="http://www.ncbi.nlm.nih.gov/pubmed/21464510">TCBB
-2012</a>].
+We are currently focusing a lot on the analysis of a fascinating, large-scale, data set composed of toughly twenty <i>Anopheles</i> mosquito genomes [<a href="http://www.sciencemag.org/content/347/6217/1258522.full.pdf">Science 2015</a>]. This in turn raises interesting questions on how to handle fragmented genome assemblies in genome rearrangement studies [a href="http://www.biomedcentral.com/content/pdf/1471-2164-16-S10-S11">BMC Genomics 2015</a>].
+
+<p>
+Last, in a starting collaboration with Leonid Chindelevitch and Will Hsiao, funded by Genome Canada, we are interested in the evolution of human pathogens, either within short-time local outbreaks, or  within a large historical context. This work ties up nicely with our current work on the analysis of ancient human pathogens using ancient DNA data.
+
 
 </td>
 </tr>
 </tbody></table> 
+
+<hr>
+
+<h2>Big data flow cytometry bioinformatics</h2>
+
+This topic is new in our lab. It stems from a starting collaboration with Ryan Brinkman (BC Cancer Agency) and Sara Mostafavi (UBC), funded by Genome Canada. Stay tuned, we will likely have results to discuss here soon.
 
 <hr>
 
@@ -136,10 +114,10 @@ trees [<a href="http://www.ncbi.nlm.nih.gov/pubmed/21464510">TCBB
 We are mostly interested in developing accurate and efficient
 algorithm to compare pairs of RNA secondary structures. Among others, we have
 been involved in the development of
-the <a href="http://brasero.labri.fr/">BRASERO benchmark</a>, and in
+the <a href="http://brasero.labri.fr/">BRASERO benchmark</a>, the analysis of the BRALIBASE benchmark [<a href="http://bib.oxfordjournals.org/content/early/2016/03/16/bib.bbw022.full.pdf">Briefings Bioinformatics 2016</a>], and in
 the design of efficient dynamic programming algorithms for comparing
 RNA secondary structures
-[<a href="http://dx.doi.org/10.1016/j.tcs.2010.11.020">TCS 2011</a>].
+[<a href="http://link.springer.com/content/pdf/10.1007%2F978-3-319-38827-4_5.pdf">AlCoB 2016</a>].
 
 <p>
 Our most recent work, in collaboration with Bordeaux University, showed that the chaining approach, widely used in sequence comparison, can be extended very to RNA secondary structures to offer an efficient and accurate method to find structure-sequence homologs in a database of RNA sequences [<a href="http://dx.doi.org/10.1016/j.jda.2011.12.013">JDA 2012</a>; <a href="http://www.ncbi.nlm.nih.gov/pubmed/25768236">JCB 2015</a>].
