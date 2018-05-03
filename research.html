@@ -38,13 +38,12 @@ RESEARCH -
 
 <hr>
 
-<h2>Genome evolution</h2> Our main research theme is to develop computational methods to analyse extant genomes in a phylogenetic context, to understand the process that shape genomes during evolution. For this, we focus on several problems, such as reconstructing the gene order of ancestral genomes, computing genome rearrangement scenarios, computing evolutionary scenarios for gene families, ...
-
-<p>
-One of our favorite research problems is the reconstruction of
+<h2>Genome evolution</h2> 
+One of our favorite research problems, an historically the initial research of ur group, 
+is the reconstruction of
 ancestral genome structures (genome maps based on synteny blocks, or
-gene orders) [<a href="10.1007/978-1-4939-7463-4_13">MMB 2018</a>]. 
-Our mains approach follows the comparative paradigm, that
+ancestral gene orders) [<a href="10.1007/978-1-4939-7463-4_13">MMB 2018</a>]. 
+Our main approach follows the comparative paradigm, that
 assumes that conserved features of related extant genomes indicate
 potential ancestral genome features.  We work within two
 methodological frameworks for this problem: a local approach, that
@@ -54,61 +53,66 @@ and a global (aka small parsimony approach), that considers all
 ancestral genomes of a species phylogeny at once [<a href="http://dx.doi.org/10.1109/TCBB.2017.2661761">TCBB 2017</a>.
 
 <p>
-Lately, we aim to extend these approaches in order we can incorporate
-in the computation models gene family events such as gene duplication,
+Lately, we aim to extend these approaches in order to iwork within a model accounting for 
+gene family events such as gene duplication,
 loss or transfert. In this approach, we developed a probablistic
 approach within the DeCo* algorithmic framework
-[<a href="http://dx.doi.org/10.1093/gbe/evx069">GBE 2017</a>]. This
+[<a href="http://dx.doi.org/10.1093/gbe/evx069">DeCo*, 2017</a>]. This
 line of work also motivated a series of papers on the
 correction of gene trees
 [<a href="http://www.ncbi.nlm.nih.gov/pubmed/25161242">Bioinformatics
 2014</a>] and on the reconciliation between gene trees and species
 trees
-[<a href="http://bioinformatics.oxfordjournals.org/content/32/13/2056.abstract">ecceTERA</a>].
+[<a href="http://bioinformatics.oxfordjournals.org/content/32/13/2056.abstract">ecceTERA, 2016</a>].
 
-<p>
-The recent breakthroughs in ancient DNA (aDNA) sequencing
-naturally lead us to investigate the problem of applying the
-principles of the methods we developed to reconstruct ancestral
-genomes maps to the assembly of aDNA sequencing data. Our first
-results, on scaffolding of ancient <i>Yersinia pestis</i> genomes
-illustrates the relevance of this approach.
+<h2>Ancient DNA<h2>
+The recent breakthroughs in ancient DNA (aDNA) sequencing naturally complements
+complement methods for reconstructing ancient genomes. This motivated our project to
+assemble recently sequenced historical samples of the pathogen <i>Yersinia pestis</i>,
+showing that it is possible to go beyond single nucleotide mutations to analyze ancient 
+pathogens data
 [<a href="http://bioinformatics.oxfordjournals.org/content/29/23/2987.abstract.html">FPSAC</a>,
   <a href="http://dx.doi.org/10.1099/mgen.0.000123">AGaPES</a>].
 
-<p>
-We are currently focusing a lot on the analysis of a fascinating, large-scale, data set composed of toughly twenty <i>Anopheles</i> mosquito genomes [<a href="http://www.sciencemag.org/content/347/6217/1258522.full.pdf">Science 2015</a>]. This in turn raises interesting questions on how to handle fragmented genome assemblies in genome rearrangement studies [<a href="http://www.biomedcentral.com/content/pdf/1471-2164-16-S10-S11">BMC Genomics 2015</a>].
-
-<hr>
+<h2>Anopheles mosquito genomics</h2>  
+We are also currently applying our comparative genomics and genome rearrangement algorithms to 
+a fascinating, large-scale, data set composed of toughly twenty <i>Anopheles</i> mosquito genomes 
+[<a href="http://www.sciencemag.org/content/347/6217/1258522.full.pdf">Science 2015</a>]. 
+This in turn raises interesting questions on how to handle fragmented genome assemblies in genome 
+rearrangement studies [<a href="http://www.biomedcentral.com/content/pdf/1471-2164-16-S10-S11">ArtDeCo, 2015</a>].
   
 <h2>Pathogen genomics</h2> 
+We recently started a very active collaboration with the SFU Computational Epidemiology lab of 
+<a href="http://www.sfu.ca/~leonid/#/home">Dr. Leonid Chindelevitch</a>, 
+and Dr. Will Hsiao (BC center for Disease Control), focusing on the development and application of 
+novel bioinformatics tools for the analysis of whole-genome sequencing data of microbial pathogens.
+We recently published our first papers on this topic 
+[<a href="http://dx.doi.org/10.1128/mSphere.00090-18">Beaver fever, 2018</a>,
+  <a href="http://dx.doi.org/10.1099/mgen.0.000146">MentaLiST, 2018</a>].
 
-<p>
-We recently started a very active collaboration with the SFU Computational Epidemiology lab of <a href="http://www.sfu.ca/~leonid/#/home">Dr. Leonid Chindelevitch</a>, 
-and Dr. Will Hsiao (BC center for Disease Control), focusing on the development and application of novel bioinformatics tools 
-for the analysis of whole-genome sequencing data of microbial pathogens. 
-
-<hr>
-
+<h2>Next-Generation Sequencing algorithms</h2>
+In a recently started collaboration with Faraz Hach (UBC and Vacouver Prostate Center)  
+we are developing novel and efficient algorithms for processing large genomic and transcriptomic sequence
+data sets, mostly motivated by questions from cancer genomics. We are currently focusing on the analysis of
+Third Generation Sequencing data (PacBio and Nanopore) [<a href="http://dx.doi.org/10.1093/bioinformatics/btw463">CoLoRMap</a>,
+  <a href="http://dx.doi.org/10.1093/bioinformatics/btx489">LRCstats</a>].
+  
 <h2>Big data flow cytometry bioinformatics</h2>
-
-This topic is new in our lab. It stems from a starting collaboration with Ryan Brinkman (BC Cancer Agency) and Sara Mostafavi (UBC), funded by Genome Canada. Stay tuned, we will likely have results to discuss here soon.
-
-<hr>
+This topic is relatively new in our lab. 
+It stems from a starting collaboration with Ryan Brinkman (BC Cancer Agency) and Sara Mostafavi 
+(UBC), funded by Genome Canada. 
+Our first paper was just released [<a href="http://dx.doi.org/10.1093/bioinformatics/bty082">flowLearn, 2018</a>].
 
 <h2>RNA secondary structures comparison.</h2>
-
-
-We are mostly interested in developing accurate and efficient
+Another question we investigated very early. Here we are mostly interested in developing accurate and efficient
 algorithm to compare pairs of RNA secondary structures. Among others, we have
 been involved in the development of
-the <a href="http://brasero.labri.fr/">BRASERO benchmark</a>, the analysis of the BRALIBASE benchmark [<a href="http://bib.oxfordjournals.org/content/early/2016/03/16/bib.bbw022.full.pdf">Briefings Bioinformatics 2016</a>], and in
-the design of efficient dynamic programming algorithms for comparing
+the <a href="http://brasero.labri.fr/">BRASERO benchmark</a>, the analysis of the BRALIBASE benchmark 
+[<a href="http://bib.oxfordjournals.org/content/early/2016/03/16/bib.bbw022.full.pdf">Briefings Bioinformatics 2016</a>], 
+and in the design of efficient dynamic programming algorithms for comparing
 RNA secondary structures
-[<a href="http://link.springer.com/content/pdf/10.1007%2F978-3-319-38827-4_5.pdf">AlCoB 2016</a>].
-
-<p>
-Our most recent work, in collaboration with Bordeaux University, showed that the chaining approach, widely used in sequence comparison, can be extended very to RNA secondary structures to offer an efficient and accurate method to find structure-sequence homologs in a database of RNA sequences [<a href="http://dx.doi.org/10.1016/j.jda.2011.12.013">JDA 2012</a>; <a href="http://www.ncbi.nlm.nih.gov/pubmed/25768236">JCB 2015</a>].
+[<a href="http://link.springer.com/content/pdf/10.1007%2F978-3-319-38827-4_5.pdf">AlCoB 2016</a> , 
+ <a href="http://www.ncbi.nlm.nih.gov/pubmed/25768236">RNA-unchained, 2015</a>].
 
 </body></html>
 
