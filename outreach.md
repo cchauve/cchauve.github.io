@@ -4,7 +4,7 @@ I collaboration with my colleague <a href="http://www.sfu.ca/~vjungic/">Dr. Vese
 the <a href="https://www.tlaaminnation.com/">Tla'amin Nation</a>, and 
 Byron Chu from <a href="https://www.cybera.ca/">Cybera</a>, we have been working
 on the development of educational resources, such as <a href="https://jupyter.org/">Jupyter notebooks</a>
-and lesson plas, aimed being used in K-12 education to at discover and experience with v
+and lesson plans, aimed et being used in K-12 education to discover and experience with
 various mathematical aspects of the culture of Pacific NorthWest nations.
 
 We have developed resources around two projects: geometric motifs in woven baskets and stone fish traps.
