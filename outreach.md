@@ -25,11 +25,9 @@ Below are stories and news articles covering our work.
 - <a href="https://medium.com/pims-math/weaving-a-new-future-for-indigenous-education-2962937cccaa" target="_blank">Medium “Weaving A New Future For Indigenous Education”</a> by Jimmy Fryers</p>
 - <a href="http://thelasource.com/en/2019/02/04/basket-motifs-illustrate-mathematical-concepts/?fbclid=IwAR16TTjVB0kF2QmfGLyJ_83EWK-3bP-tM0TMdwr16ebvtVdgFqGqLY4nLDg" target="_blank">The Source “Basket motifs illustrate mathematical concepts”</a> by  Betty Shea</p>
 - <a href="https://the-peak.ca/2019/01/sfu-students-utilize-indigenous-basketry-patterns-to-teach-mathematical-concepts/" target="_blank">The Peak: “SFU students utilize Indigenous basketry patterns to teach mathematical concepts”</a> By Henry Tran</p>
-- <a href="http://www.sfu.ca/sfunews/stories/2018/12/math-students-help-preserve-and-promote-traditional-basketry.html" target="_blank">SFU News: “New app uses Indigenous basketry patterns to teach math concepts”</a>  By Diane Luckow</p>
 - <a href="https://salishseasentinel.ca/2019/02/digital-weaving-online-tool-teaches-math-using-tlaamin-basket-designs/">The Salish Sea Sentinel: “Digital weaving: Online tool teaches math using Tla’amin basket designs”</a> By Cara McKenna</p>
 - <a href="https://theconversation.com/indigenous-basket-weaving-makes-an-excellent-digital-math-lesson-110094" target="_blank">The Conversation: “Indigenous basket-weaving makes an excellent digital math lesson”</a>  By Dr. Veselin Jungic</p>
-- <a href="https://www.sfu.ca/math/news---events/news-list/2018-news-stories/New-Collaboration-with-the-Tlaamin-Nation.html" target="_blank">SFU Department of Mathematics News: “New Collaboration with the Tla’amin Nation”</a> By Dr. Veselin Jungic</p>
-
+- 
 ## Stone fish traps.
 
 This work was done with Bryce Haley and Laura Gutierrez Funderburk.
