@@ -39,7 +39,7 @@ Our notebook and lesson plns are available at
   salmon</a> (lesson plan).
 
 Below are stories, news articles and conference presentationscovering our work.
-- <a href="https://www.sfu.ca/sfunews/stories/2021/03/pi-day--how-indigenous-stone-fish-traps-contribute-to-mathematic.html">Pi Day: How Indigenous stone-fish traps contribute to mathematical education</a.>
+- <a href="https://www.sfu.ca/sfunews/stories/2021/03/pi-day--how-indigenous-stone-fish-traps-contribute-to-mathematic.html">Pi Day: How Indigenous stone-fish traps contribute to mathematical education</a>.
 - <a href="https://c2c.ourconference.ca/index.php?Page=Workshop&code=WW7MME">Engineering and Sustainability in First Nations Fish Harvesting Traditions</a>, Classrooms to Communities (C2C) 2021 Provincial Conference.
 - <a href="https://ui.adsabs.harvard.edu/abs/2021AGUFM.U51B..05G/abstract">Case study: modelling traditional Coast Salish fishing practices with open science and the Jupyter ecosystem</a>, AGU Fall Meeting 2021.
 
