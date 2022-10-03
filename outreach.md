@@ -32,7 +32,7 @@ Below are stories and news articles covering our work.
 
 This work was done with Bryce Haley and Laura Gutierrez Funderburk.
 
-Our notebook and lesson plns are available at
+Our notebook and lesson plans are available at
 - <a href="https://www.callysto.ca/indigenous-content/">Callysto Indigenous Content</a> (notebooks).
 - <a href="https://www.callysto.ca/wp-content/uploads/2021/03/Callysto-Lesson-on-Modelling-Coast-Salish-Fish-Traps-new.pdf">Modelling Coast Salish fish traps</a> (lesson plan).
 - <a href="https://www.callysto.ca/wp-content/uploads/2021/03/Callysto-Lesson-on-Modelling-the-Impact-of-Fish-Harvesting-new.pdf">Modelling the impact of fish harvesting on pink
