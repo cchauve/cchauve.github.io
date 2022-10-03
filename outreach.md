@@ -9,7 +9,7 @@ various mathematical aspects of the culture of Pacific NorthWest nations.
 
 We have developed resources around two projects: geometric motifs in woven baskets and stone fish traps.
 
-This work is funded by the <a href="https://pims.ca">Pacific Institute for the Mathematical Sciences</a>
+This work is funded by the <a href="https://pims.math.ca">Pacific Institute for the Mathematical Sciences</a>
 through the <a href="https://www.callysto.ca/">Callysto</a> project. The resources we developed are available
 through Callysto, <a href="https://www.callysto.ca/indigenous-content/">Indigenous Content</a>.
 
