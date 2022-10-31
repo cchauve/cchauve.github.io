@@ -13,7 +13,7 @@ This work is funded by the <a href="https://pims.math.ca">Pacific Institute for 
 through the <a href="https://www.callysto.ca/">Callysto</a> project. The resources we developed are available
 through Callysto, <a href="https://www.callysto.ca/indigenous-content/">Indigenous Content</a>.
 
-## Woven basket motifs.
+## Woven basket motifs
 
 This work was done with Howell Tan, Jennipher Pham, Laura Gutierrez Funderburk.
 
@@ -28,7 +28,7 @@ Below are stories and news articles covering our work.
 - <a href="https://salishseasentinel.ca/2019/02/digital-weaving-online-tool-teaches-math-using-tlaamin-basket-designs/">The Salish Sea Sentinel: “Digital weaving: Online tool teaches math using Tla’amin basket designs”</a> By Cara McKenna</p>
 - <a href="https://theconversation.com/indigenous-basket-weaving-makes-an-excellent-digital-math-lesson-110094" target="_blank">The Conversation: “Indigenous basket-weaving makes an excellent digital math lesson”</a>  By Dr. Veselin Jungic</p>
 - 
-## Stone fish traps.
+## Stone fish traps
 
 This work was done with Bryce Haley and Laura Gutierrez Funderburk.
 
